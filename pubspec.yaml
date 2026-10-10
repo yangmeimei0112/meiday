@@ -1,0 +1,64 @@
+name: smart_calendar_hub
+description: "ChronoHub - Local-first dual-engine smart calendar & GTD time hub"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management & Dependency Injection
+  flutter_riverpod: ^2.5.1
+
+  # Routing & Navigation
+  go_router: ^14.0.0
+
+  # Local-First Persistence & SQLite Engine
+  drift: ^2.24.0
+  path_provider: ^2.1.2
+  path: ^1.9.0
+
+  # Security, Crypto & Identifiers
+  flutter_secure_storage: ^9.2.2
+  crypto: ^3.0.3
+  uuid: ^4.4.0
+
+  # Cloud Synchronization & Realtime
+  supabase_flutter: ^2.8.0
+
+  # Desktop Window & System Tray Integration (Windows First)
+  window_manager: ^0.4.3
+  tray_manager: ^0.2.4
+  hotkey_manager: ^0.2.3
+
+  # Audio Playback (White Noise & Pomodoro Chimes)
+  audioplayers: ^6.1.0
+
+  # Notifications
+  flutter_local_notifications: ^18.0.0
+
+  # Utilities, Clocks & Formatting
+  intl: ^0.20.2
+  collection: ^1.18.0
+  meta: ^1.12.0
+  clock: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  drift_dev: ^2.24.0
+  build_runner: ^2.4.11
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/audio/
